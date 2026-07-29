@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLFORCE TIME MACHINE | SDVX 旧基準VOLFORCE計算ツール</title>
+<meta name="description" content="SOUND VOLTEXの今のスコアから、EXCEED GEAR・VIVID WAVE・HEAVENLY HAVEN・∇、過去4バージョン基準のVOLFORCEを計算し直すブックマークレット。当時のレベル表と計算式をそのまま再現。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VOLFORCE TIME MACHINE | SDVX 旧基準VOLFORCE計算ツール">
+<meta property="og:description" content="今のスコアで、過去4バージョン基準のVOLFORCEを計算し直せるブックマークレット。EXCEED GEARから∇まで対応。">
+<meta property="og:url" content="https://yuuya1202.github.io/sdvx-vf-tool/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VOLFORCE TIME MACHINE | SDVX 旧基準VOLFORCE計算ツール">
+<meta name="twitter:description" content="今のスコアで、過去4バージョン基準のVOLFORCEを計算し直せるブックマークレット。EXCEED GEARから∇まで対応。">
+<link rel="canonical" href="https://yuuya1202.github.io/sdvx-vf-tool/">
+<style>
+  :root {
+    --grad: linear-gradient(90deg, #1fc4c4, #6a4fd6);
+    --ink: #23262b;
+    --sub: #6b7280;
+    --line: #e5e7eb;
+    --bg-soft: #f7f8fa;
+    --code-bg: #fffbe8;
+    --code-line: #eadfa0;
+    --hh: #3fb6d8;
+    --vw: #ef4f9e;
+    --eg: #8a94a3;
+    --nb: #1f8a52;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: -apple-system, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 840px; margin: 0 auto; padding: 0 20px; }
+  a { color: inherit; }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 28px; text-align: center; }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    color: #fff;
+    background: var(--grad);
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(28px, 6vw, 42px);
+    line-height: 1.3;
+    margin: 0 0 14px;
+  }
+  h1 .grad-text {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .pitch {
+    font-size: 15.5px;
+    color: var(--sub);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* ---------- section header (colored dot + title), matches reference style ---------- */
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px;
+  }
+  .dot {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--grad);
+    flex-shrink: 0;
+  }
+  .section-title h2 {
+    font-size: 19px;
+    margin: 0;
+  }
+
+  section { margin: 48px 0; }
+
+  /* ---------- era list ---------- */
+  .era-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .era-list li {
+    display: table;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 2px;
+    border-bottom: 3px solid;
+  }
+  .era-list li + li { margin-top: 10px; }
+
+  /* ---------- tabs ---------- */
+  .tabs {
+    display: flex;
+    border: 1px solid var(--line);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+  .tab-btn {
+    flex: 1;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    background: var(--bg-soft);
+    color: var(--sub);
+    border: none;
+    border-right: 1px solid var(--line);
+    cursor: pointer;
+  }
+  .tab-btn:last-child { border-right: none; }
+  .tab-btn.active {
+    background: var(--grad);
+    color: #fff;
+  }
+  .tab-panel {
+    display: none;
+    border: 1px solid var(--line);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 22px;
+  }
+  .tab-panel.active { display: block; }
+
+  .tab-panel ol { margin: 0 0 18px; padding-left: 20px; font-size: 14px; }
+  .tab-panel li { margin-bottom: 8px; }
+  .tab-panel p { font-size: 14px; }
+
+  .drag-btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    background: var(--grad);
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: grab;
+  }
+  .drag-btn:active { cursor: grabbing; }
+
+  .code-box {
+    background: var(--code-bg);
+    border: 1px solid var(--code-line);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 11.5px;
+    color: #6b5d1a;
+    word-break: break-all;
+    margin-bottom: 10px;
+  }
+  .copy-btn {
+    display: block;
+    width: 100%;
+    background: var(--grad);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14.5px;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .copy-status { font-size: 12.5px; color: #1fa383; min-height: 16px; margin-top: 8px; text-align: center; }
+
+  /* ---------- features ---------- */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+  @media (max-width: 640px) {
+    .feature-grid { grid-template-columns: 1fr; }
+  }
+  .feature {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .feature h3 { font-size: 14.5px; margin: 0 0 6px; }
+  .feature p { font-size: 13px; color: var(--ink); margin: 0; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 26px 0 50px;
+    font-size: 12px;
+    color: #9aa1ab;
+    text-align: center;
+  }
+  footer p { margin: 0 0 8px; }
+  footer a.repo { color: var(--sub); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="wrap hero">
+  <h1 style="color:var(--ink);">SDVX VF対象曲確認ツール</h1>
+  <p class="pitch">各VerにおけるVOLFORCEと対象曲を確認できるブックマークレットです。</p>
+</div>
+
+<div class="wrap">
+
+  <section id="install">
+    <div class="section-title"><span class="dot"></span><h2>使い方</h2></div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="before">ご利用の前に</button>
+      <button class="tab-btn" data-tab="mobile">スマホでの登録</button>
+      <button class="tab-btn" data-tab="pc">PCでの登録</button>
+    </div>
+
+    <div class="tab-panel active" data-tab="before">
+      <p>SOUND VOLTEXの <b>e-amusementベーシックコース</b> への加入が必要です。</p>
+      <p>加入した状態で、以下のブックマークレットを <b>PLAY DATA &gt; プロフィールのページ</b> で実行してください。実行するとVerを選ぶ画面が表示されます。</p>
+      <p style="color:var(--sub);font-size:13px;">※スコアの取得はご自身のe-amusementアカウント内で完結し、外部サーバーへの送信は行いません。</p>
+    </div>
+
+    <div class="tab-panel" data-tab="pc">
+      <ol>
+        <li>下のボタンをブックマークバーへドラッグ&amp;ドロップ</li>
+        <li>SDVXのプレイデータ画面を開く</li>
+        <li>登録したブックマークをクリックして実行</li>
+      </ol>
+      <a class="drag-btn" href="javascript:fetch('https://raw.githubusercontent.com/yuuya1202/sdvx-vf-tool/main/sdvx_vf_top50.min.js?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(eval);">VF Time Machine</a>
+    </div>
+
+    <div class="tab-panel" data-tab="mobile">
+      <ol>
+        <li>下のコードをコピー</li>
+        <li>ブックマークを新規作成し、URL欄にコピーしたコードを貼って登録(名前は自由)</li>
+        <li>SDVXのプレイデータ画面でそのブックマークを開く</li>
+      </ol>
+      <div class="code-box" id="bmCode">javascript:fetch('https://raw.githubusercontent.com/yuuya1202/sdvx-vf-tool/main/sdvx_vf_top50.min.js?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(eval);</div>
+      <button class="copy-btn" id="copyBtn">コピー</button>
+      <p class="copy-status" id="copyStatus"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="dot"></span><h2>できること</h2></div>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>VOLFORCE算出</h3>
+        <p>現行の∇基準に加え、EXCEED GEAR・VIVID WAVE・HEAVENLY HAVENの規格を使ってプレイヤーのVFと対象楽曲を確認できます。</p>
+      </div>
+      <div class="feature">
+        <h3>期間限定モード</h3>
+        <p>選んだバージョン当時にまだ存在しなかった曲・譜面を自動で除外して計算できます。</p>
+        <p style="color:var(--ink);font-size:12px;margin-top:8px;">※ご利用の際はVer選択画面でチェックを入れてください</p>
+      </div>
+      <div class="feature">
+        <h3>画像出力</h3>
+        <p>対象楽曲を1枚の画像にまとめて出力。SNSへの投稿などにご利用ください。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>非公式のファンツールです。KONAMIおよびSOUND VOLTEXとは関係ありません。</p>
+    <p><a class="repo" href="https://github.com/yuuya1202/sdvx-vf-tool" target="_blank" rel="noopener">github.com/yuuya1202/sdvx-vf-tool</a></p>
+    <p>困ったら <a class="repo" href="https://x.com/yuuya1202" target="_blank" rel="noopener">@yuuya1202</a> まで</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var key = btn.dataset.tab;
+      document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+      document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.toggle('active', p.dataset.tab === key); });
+    });
+  });
+
+  document.getElementById('copyBtn').addEventListener('click', function () {
+    var code = document.getElementById('bmCode').textContent;
+    var status = document.getElementById('copyStatus');
+    navigator.clipboard.writeText(code).then(function () {
+      status.textContent = 'コピーしました';
+    }).catch(function () {
+      var ta = document.createElement('textarea');
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      status.textContent = 'コピーしました';
+    });
+  });
+</script>
+
+</body>
+</html>

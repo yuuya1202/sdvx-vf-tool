@@ -26419,7 +26419,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.4
+    "lv_exh": 18.4,
+    "lv_mxm": 20.2
    }
   },
   "version": 4
@@ -29157,7 +29158,8 @@
    "current": {
     "lv_nov": 7,
     "lv_adv": 15,
-    "lv_exh": 18.8
+    "lv_exh": 18.8,
+    "lv_mxm": 20.1
    }
   },
   "version": 4
@@ -31928,7 +31930,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.4
+    "lv_exh": 18.4,
+    "lv_mxm": 20.2
    }
   },
   "version": 4
@@ -35326,7 +35329,8 @@
    "current": {
     "lv_nov": 7,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.5
    }
   },
   "version": 4
@@ -35358,7 +35362,8 @@
    "current": {
     "lv_nov": 7,
     "lv_adv": 15,
-    "lv_exh": 18.3
+    "lv_exh": 18.3,
+    "lv_mxm": 20.2
    }
   },
   "version": 4
@@ -37469,7 +37474,8 @@
    "current": {
     "lv_nov": 7,
     "lv_adv": 15,
-    "lv_exh": 17.5
+    "lv_exh": 17.5,
+    "lv_mxm": 20.2
    }
   },
   "version": 4
@@ -41428,7 +41434,8 @@
    "current": {
     "lv_nov": 7,
     "lv_adv": 15,
-    "lv_exh": 18.4
+    "lv_exh": 18.4,
+    "lv_mxm": 20.5
    }
   },
   "version": 5
@@ -42978,7 +42985,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.5
+    "lv_exh": 18.5,
+    "lv_mxm": 20.6
    }
   },
   "version": 5
@@ -43901,7 +43909,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.9
+    "lv_exh": 18.9,
+    "lv_mxm": 20.2
    }
   },
   "version": 5
@@ -49807,7 +49816,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.6
+    "lv_exh": 18.6,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -50829,7 +50839,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.8
+    "lv_exh": 18.8,
+    "lv_mxm": 20.7
    }
   },
   "version": 6
@@ -51158,7 +51169,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.6
+    "lv_exh": 18.6,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -53269,7 +53281,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.3
    }
   },
   "version": 6
@@ -55050,7 +55063,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.8
+    "lv_exh": 18.8,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -55412,7 +55426,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.7
    }
   },
   "version": 6
@@ -56599,7 +56614,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.4
    }
   },
   "version": 6
@@ -57423,7 +57439,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.3
+    "lv_exh": 18.3,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -57983,7 +58000,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.5
+    "lv_exh": 18.5,
+    "lv_mxm": 20.3
    }
   },
   "version": 6
@@ -59719,7 +59737,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 19.1
+    "lv_exh": 19.1,
+    "lv_mxm": 20.9
    }
   },
   "version": 6
@@ -61500,7 +61519,8 @@
    "current": {
     "lv_nov": 7,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.5
    }
   },
   "version": 6
@@ -61961,7 +61981,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.5
+    "lv_exh": 18.5,
+    "lv_mxm": 20.3
    }
   },
   "version": 6
@@ -62587,7 +62608,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.5
+    "lv_exh": 18.5,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -64302,7 +64324,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -64565,7 +64588,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -67105,7 +67129,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.7
+    "lv_exh": 18.7,
+    "lv_mxm": 20.6
    }
   },
   "version": 6
@@ -70512,7 +70537,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.5
+    "lv_exh": 18.5,
+    "lv_mxm": 20.7
    }
   },
   "version": 7
@@ -71303,7 +71329,8 @@
    "current": {
     "lv_nov": 8,
     "lv_adv": 15,
-    "lv_exh": 18.6
+    "lv_exh": 18.6,
+    "lv_mxm": 20.5
    }
   },
   "version": 7
