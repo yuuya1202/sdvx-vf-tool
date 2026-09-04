@@ -73609,5 +73609,137 @@
   },
   "version": 7,
   "reading": "さいはて"
+ },
+ {
+  "bpm": "135-208",
+  "music": "夢色ワンダー",
+  "artist": "hololive IDOL PROJECT",
+  "eras": {
+   "old": {
+    "lv_nov": 3,
+    "lv_adv": 9,
+    "lv_exh": 13,
+    "lv_mxm": 18
+   },
+   "old2": {
+    "lv_nov": 3,
+    "lv_adv": 9,
+    "lv_exh": 13,
+    "lv_mxm": 18
+   },
+   "old3": {
+    "lv_nov": 3,
+    "lv_adv": 9,
+    "lv_exh": 13,
+    "lv_mxm": 18
+   },
+   "current": {
+    "lv_nov": 3,
+    "lv_adv": 9,
+    "lv_exh": 13,
+    "lv_mxm": 18.4
+   }
+  },
+  "version": 7,
+  "reading": "ゆめいろわんだー"
+ },
+ {
+  "bpm": 195,
+  "music": "dilucurum",
+  "artist": "EYEN(seatrus+kuro)",
+  "eras": {
+   "old": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old2": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old3": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "current": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18.5
+   }
+  },
+  "version": 7,
+  "reading": "でぃるくるむ"
+ },
+ {
+  "bpm": 190,
+  "music": "LR",
+  "artist": "テヅカ x 神楽坂ヨシキ",
+  "eras": {
+   "old": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old2": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old3": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "current": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18.3
+   }
+  },
+  "version": 7,
+  "reading": "えるあーる"
+ },
+ {
+  "bpm": 130,
+  "music": "ありがとうのマホウ",
+  "artist": "lapin 5",
+  "eras": {
+   "old": {
+    "lv_nov": 5,
+    "lv_adv": 12,
+    "lv_exh": 15,
+    "lv_mxm": 17
+   },
+   "old2": {
+    "lv_nov": 5,
+    "lv_adv": 12,
+    "lv_exh": 15,
+    "lv_mxm": 17
+   },
+   "old3": {
+    "lv_nov": 5,
+    "lv_adv": 12,
+    "lv_exh": 15,
+    "lv_mxm": 17
+   },
+   "current": {
+    "lv_nov": 5,
+    "lv_adv": 12,
+    "lv_exh": 15,
+    "lv_mxm": 17.5
+   }
+  },
+  "version": 7,
+  "reading": "ありがとうのまほう"
  }
 ]
