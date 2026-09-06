@@ -5960,8 +5960,7 @@
    "current": {
     "lv_nov": 5,
     "lv_adv": 13,
-    "lv_exh": 17,
-    "lv_mxm": 17
+    "lv_exh": 17
    }
   },
   "version": 2,
@@ -15138,8 +15137,7 @@
    "current": {
     "lv_nov": 6,
     "lv_adv": 12,
-    "lv_exh": 18.3,
-    "lv_mxm": 18.2
+    "lv_exh": 18.3
    }
   },
   "version": 3,
@@ -49120,9 +49118,9 @@
     "lv_mxm": 17.0
    },
    "current": {
-    "lv_nov": 5,
-    "lv_adv": 13,
-    "lv_exh": 17,
+    "lv_nov": 4,
+    "lv_adv": 11,
+    "lv_exh": 14,
     "lv_mxm": 17
    }
   },
@@ -49153,10 +49151,10 @@
     "lv_mxm": 18.0
    },
    "current": {
-    "lv_nov": 6,
-    "lv_adv": 13,
-    "lv_exh": 16,
-    "lv_mxm": 18.4
+    "lv_nov": 5,
+    "lv_adv": 12,
+    "lv_exh": 15,
+    "lv_mxm": 18
    }
   },
   "version": 6,
@@ -58428,7 +58426,7 @@
    "current": {
     "lv_nov": 6,
     "lv_adv": 12,
-    "lv_exh": 18.3,
+    "lv_exh": 15,
     "lv_mxm": 18.2
    }
   },
