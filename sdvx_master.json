@@ -73739,5 +73739,203 @@
   },
   "version": 7,
   "reading": "ありがとうのまほう"
+ },
+ {
+  "bpm": 205,
+  "music": "No.1",
+  "artist": "Hommarju",
+  "eras": {
+   "old": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 18,
+    "lv_mxm": 19
+   },
+   "old2": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 18,
+    "lv_mxm": 19
+   },
+   "old3": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 18,
+    "lv_mxm": 19
+   },
+   "current": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 18.2,
+    "lv_mxm": 19.8
+   }
+  },
+  "version": 7,
+  "reading": "なんばーわん"
+ },
+ {
+  "bpm": 200,
+  "music": "Quetzalcóretl",
+  "artist": "Tatsunoshin x Juggernaut.",
+  "eras": {
+   "old": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old2": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old3": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "current": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18.5
+   }
+  },
+  "version": 7,
+  "reading": "けつぁるこあとる"
+ },
+ {
+  "bpm": 210,
+  "music": "Trinity ∇urst",
+  "artist": "K-forest vs. Reku Mochizuki vs. DRIVE.",
+  "eras": {
+   "old": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17,
+    "lv_mxm": 19
+   },
+   "old2": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17,
+    "lv_mxm": 19
+   },
+   "old3": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17,
+    "lv_mxm": 19
+   },
+   "current": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17.5,
+    "lv_mxm": 19.4
+   }
+  },
+  "version": 7,
+  "reading": "とりにてぃばーすと"
+ },
+ {
+  "bpm": "105-210",
+  "music": "VICTIM",
+  "artist": "U-ske feat. 駄々子",
+  "eras": {
+   "old": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old2": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old3": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "current": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18.3
+   }
+  },
+  "version": 7,
+  "reading": "ゔぃくてぃむ"
+ },
+ {
+  "bpm": 211,
+  "music": "こどもごころのアドベンチャー",
+  "artist": "iru",
+  "eras": {
+   "old": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old2": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "old3": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18
+   },
+   "current": {
+    "lv_nov": 6,
+    "lv_adv": 13,
+    "lv_exh": 16,
+    "lv_mxm": 18.7
+   }
+  },
+  "version": 7,
+  "reading": "こどもごころのあどべんちゃー"
+ },
+ {
+  "bpm": "300-600",
+  "music": "ボ",
+  "artist": "立秋 feat.ちょこ",
+  "eras": {
+   "old": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17,
+    "lv_mxm": 19
+   },
+   "old2": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17,
+    "lv_mxm": 19
+   },
+   "old3": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17,
+    "lv_mxm": 19
+   },
+   "current": {
+    "lv_nov": 7,
+    "lv_adv": 14,
+    "lv_exh": 17.5,
+    "lv_mxm": 19.7
+   }
+  },
+  "version": 7,
+  "reading": "ぼ"
  }
 ]
